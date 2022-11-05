@@ -4,15 +4,15 @@ console.log(`Number of categories: ${list.length}`);
 
 const categoryFirst = document.body.childNodes[3].childNodes[1].childNodes[1];
 
-const listFirst = document.body.childNodes[3].childNodes[1].childNodes[3].children
+const listFirst = document.body.childNodes[3].childNodes[1].childNodes[3].children;
 
 const categorySecond = document.body.childNodes[3].childNodes[3].childNodes[1];
 
-const listSecond = document.body.childNodes[3].childNodes[3].childNodes[3].children
+const listSecond = document.body.childNodes[3].childNodes[3].childNodes[3].children;
 
 const categoryThird = document.body.childNodes[3].childNodes[5].childNodes[1];
 
-const listThird = document.body.childNodes[3].childNodes[5].childNodes[3].children
+const listThird = document.body.childNodes[3].childNodes[5].childNodes[3].children;
 
 
 
