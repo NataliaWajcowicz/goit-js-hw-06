@@ -1,24 +1,24 @@
 const input = document.querySelector("#validation-input");
 const maxLength = parseInt(input.getAttribute("data-length"));
-console.log(maxLength);
-let text = 0;
 
 
 
-input.addEventListener("input", (event) => {
-    text = event.currentTarget.value;
 
-    return text;
-    
-})
 
-input.addEventListener("blur", () => {
+
+input.addEventListener("change", (event) => {
+    const text = event.currentTarget.value;
+    input.classList.add("valid");
+    input.classList.remove("invalid")
     if (text.length > maxLength) {
-        input.classList.toggle("invalid")
-    } 
+        input.classList.add("invalid")
+    };
     
-    input.classList.toggle("valid")
+    
+    
 })
+
+
 
 
 
