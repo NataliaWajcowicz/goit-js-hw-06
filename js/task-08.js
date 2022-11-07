@@ -8,17 +8,20 @@ function handleSubmit(event) {
         elements: { email, password }
     } = event.currentTarget;
 
-    if (email.value === "" || password.value === "") {
-        console.log("Fill all fields!");
-        
-    }
-
     const user = {
         email: email.value,
         password: password.value,
     }
 
-    console.log(user);
+
+    if (email.value === "" || password.value === "") {
+        alert("Fill all fields!");
+        
+    } else {
+        console.log(user);
+    }
+
+    
     event.currentTarget.reset();
 
 }
