@@ -16,12 +16,7 @@ const images = [
 const list = document.querySelector("ul.gallery");
 
 console.log(list);
-list.style.listStyleType = "none";
-list.style.display = "flex";
-list.style.flexDirection = "row";
-list.style.width = "1000px";
-list.style.padding = "0"
-list.style.justifyContent="space-between"
+list.classList.add("list");
 
 
   let markup=images.map(({url,alt}) => {
@@ -30,17 +25,16 @@ list.style.justifyContent="space-between"
 list.insertAdjacentHTML("afterbegin", markup);
 
 const image = list.firstChild.firstChild;
-image.style.width = "300px";
-image.style.height = "200px";
+image.classList.add("img");
 
 const middleImage = image.parentElement.nextElementSibling.firstChild;
-middleImage.style.width = "300px";
-middleImage.style.height = "200px";
+middleImage.classList.add("img");
+
 
 const lastImage = list.lastChild.firstChild;
 console.log(lastImage);
-lastImage.style.width = "300px";
-lastImage.style.height = "200px";
+lastImage.classList.add("img");
+
 
 
 
